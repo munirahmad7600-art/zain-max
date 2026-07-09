@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "ZAIN MAX",
+    "slug": "zain-max",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0a0a0f",
+    "splash": {
+      "backgroundColor": "#0a0a0f"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.zainmax.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "ZAIN MAX ko aapki awaz sun'ne ke liye microphone ki zaroorat hai",
+        "NSSpeechRecognitionUsageDescription": "ZAIN MAX ko voice commands ke liye speech recognition ki zaroorat hai"
+      }
+    },
+    "android": {
+      "package": "com.zainmax.app",
+      "permissions": [
+        "RECORD_AUDIO",
+        "INTERNET",
+        "VIBRATE",
+        "ACCESS_NETWORK_STATE",
+        "WAKE_LOCK"
+      ],
+      "softwareKeyboardLayoutMode": "pan"
+    },
+    "plugins": [
+      "./withKotlinSuppress",
+      [
+        "expo-av",
+        {
+          "microphonePermission": "ZAIN MAX ko awaz record karne ke liye microphone chahiye."
+        }
+      ],
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "75058d1e-0f7f-4061-b343-484035f6df93"
+      }
+    }
+  }
+}
